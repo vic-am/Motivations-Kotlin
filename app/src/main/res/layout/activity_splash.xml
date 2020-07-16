@@ -9,8 +9,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
         android:padding="16dp"
         android:text="Vamos começar?"
         android:textColor="@color/white"
@@ -22,6 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_minimal"
+        android:layout_marginEnd="@dimen/margin_minimal"
         android:gravity="center"
         android:hint="Qual é o seu nome?"
         android:inputType="text"
@@ -36,11 +38,11 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
-        android:background="@color/colorAccent"
-        android:textSize="20sp"
+        android:background="@drawable/ripple_button_salvar"
         android:padding="14dp"
         android:text="Salvar"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
 
 </RelativeLayout>

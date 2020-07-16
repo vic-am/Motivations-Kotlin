@@ -14,27 +14,27 @@
         <ImageView
             android:id="@+id/imageAll"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_margin="8dp"
+            android:layout_height="54dp"
             android:layout_weight="1"
+            android:background="@drawable/ripple_button"
             android:src="@drawable/ic_all"
             android:tint="@color/white" />
 
         <ImageView
             android:id="@+id/imageHappy"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_margin="8dp"
+            android:layout_height="54dp"
             android:layout_weight="1"
+            android:background="@drawable/ripple_button"
             android:src="@drawable/ic_happy"
             android:tint="@color/white" />
 
         <ImageView
             android:id="@+id/imageSun"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_margin="8dp"
+            android:layout_height="54dp"
             android:layout_weight="1"
+            android:background="@drawable/ripple_button"
             android:src="@drawable/ic_sun"
             android:tint="@color/white" />
 
@@ -45,20 +45,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/linearMenu"
-        android:layout_marginTop="32dp"
-        android:textSize="18sp"
         android:layout_centerHorizontal="true"
-        android:text="Hello World!" />
+        android:layout_marginTop="32dp"
+        android:text="Hello World!"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textPhrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:textSize="22sp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Frase!" />
+        android:layout_marginStart="@dimen/margin_minimal"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/margin_minimal"
+        android:gravity="center"
+        android:text="Frase!"
+        android:textSize="22sp" />
 
     <View
         android:layout_width="128dp"
@@ -66,18 +69,19 @@
         android:layout_below="@+id/textPhrase"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:background="@color/colorAccent"/>
+        android:background="@color/colorAccent" />
 
     <Button
         android:id="@+id/buttonNewPhrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ripple_button"
         android:padding="16dp"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/white"
         android:text="Nova Frase"
-        android:layout_marginBottom="16dp"/>
+
+        android:textColor="@color/white" />
 
 </RelativeLayout>
